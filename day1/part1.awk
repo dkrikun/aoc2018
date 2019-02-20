@@ -1,2 +1,4 @@
-{ acc += $0 }
-END { print acc }
+{
+    acc += int($0)
+    print acc
+}
